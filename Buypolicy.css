@@ -1,0 +1,268 @@
+#body{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 50%, #ffffff 100%);
+}
+#title{
+    height: 100px;
+    background-color: rgba(27, 26, 26, 0.658);
+    border: none;
+ }
+ #title h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: helvetica;
+    color: rgb(255, 255, 255);
+ }
+ #arrage{
+     display:flex ;
+ }
+ #card-outer{
+     height:800px;
+     border: none;
+ }
+ 
+  .flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 700px;
+    perspective: 1000px;
+    margin-top: 15px;
+    margin-left: 50px;
+    border-radius: 10px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    border-radius: 10px;
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+  .flip-card-front {
+    background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    color: black;
+    border-radius: 10px;
+  }
+  
+  .flip-card-back {
+  background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+
+  }
+ 
+  #card-title{
+           color: rgb(0, 0, 0);
+           font-family: Helvetica ;
+           font-size: 40px;
+  }
+  #logo_images{
+      margin-top: 10%;
+      width:160px;
+  }
+  #rupee{
+    width:60px;
+    height: 50px;
+  }
+  
+  #ruppes{
+     color:  #ffe14d;
+     font-size: 75px;
+    }
+    #arr{
+        margin-top: 30px;
+    }
+    #ruppes1{
+      color:  #000000;
+      font-size: 35px;
+     }
+#user-shield{
+    width:50px;
+    float: left ;
+    margin-left: 20px;
+}
+#main-title{
+   margin-right: 175px;
+   font-size: 20px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: #473080;
+}
+.hide{
+    display: none;
+  }
+.hide span{
+    margin-right: 160px;
+}
+
+#main-title1{
+    margin-right: 18px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #473080;
+ }
+ #main-title2{
+    margin-right: 130px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #473080;
+ }
+ #main-title3{
+    margin-right: 192px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #473080;
+ }
+ #main-title4{
+    margin-right: 135px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #473080;
+ }
+
+
+ #main-title:hover + .hide {
+    display: block;
+    color: rgb(0, 0, 0);
+    margin-left: 10%;
+    text-align: left;
+  }
+
+ #main-title1:hover + .hide {
+    display: block;
+    color: rgb(0, 0, 0);
+    margin-left: 10%;
+    text-align: left;
+  }
+  #main-title2:hover + .hide {
+    display: block;
+    color: rgb(0, 0, 0);
+    margin-left: 10%;
+    text-align: left;
+  }
+  #main-title3:hover + .hide {
+    display: block;
+    color: rgb(0, 0, 0);
+    margin-left: 10%;
+    text-align: left;
+  }
+  #main-title4:hover + .hide {
+    display: block;
+    color: rgb(0, 0, 0);
+    margin-left: 10%;
+    text-align: left;
+  }
+
+  
+
+  .btn-grad {background-image: linear-gradient(to right, #f46b45 0%, #eea849  51%, #f46b45  100%)}
+  .btn-grad {
+     margin: 10px;
+     margin-left: 115px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     border: none; cursor: pointer;    
+   }
+
+   .btn-grad:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+  
+  
+   .btn-grad1 {background-image: linear-gradient(to right, #f46b45 0%, #eea849  51%, #f46b45  100%)}
+   .btn-grad1 {
+      margin: 10px;
+      margin-left: 215px;
+      padding: 15px 45px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;            
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      cursor: pointer;    
+      border: none;
+    }
+ 
+    .btn-grad1:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+
+    
+  .btn-grad2 {background-image: linear-gradient(to right, #f46b45 0%, #eea849  51%, #f46b45  100%)}
+  .btn-grad2 {
+     margin: 10px;
+     margin-left: 215px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     border: none; cursor: pointer;    
+   }
+
+   .btn-grad2:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+
+   
+  .btn-grad3 {background-image: linear-gradient(to right, #f46b45 0%, #eea849  51%, #f46b45  100%)}
+  .btn-grad3 {
+     margin: 10px;
+     margin-left: 185px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;   
+     cursor: pointer;         
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     border: none;
+   }
+
+   .btn-grad3:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+   #payment{
+     margin-top: 300px;
+     position:fixed;
+   }

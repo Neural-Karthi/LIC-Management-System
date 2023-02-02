@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           Payment-page-LIC.com
+        </title>
+        <link rel="stylesheet" href="payment_page.css">
+        <style>
+          #field9{
+              background-color: #222121c0;
+              height: 150px;
+              border-radius: 10px;
+              border:none;
+          }
+          #logo{
+              float: left;
+              margin-top: 5px;
+              width: 350px;
+              height: 125px;
+              align-items:center;
+              display: flex;   
+          }
+          #slogan{
+              position: relative;
+              top: 20px;
+              margin-right: 80px;
+              color:rgb(255, 255, 255);
+              font-family: Mistral;
+              font-size: 55px;
+              text-shadow:2px 2px 4px rgb(0, 0, 0);
+          }
+          
+           .btn-grad5 {background-color: rgb(255, 72, 0);}
+          .btn-grad5{
+            margin-left: 5px;
+             padding: 13px 30px;
+             font-size: 15px;
+             text-align: center;
+             text-transform: uppercase;
+             background-size: 200% auto;
+             color: rgb(253, 253, 253);     
+             font-size: 17px;
+             font-family: Arial, Helvetica, sans-serif;
+             border-radius: 12px;
+            border: 1px rgb(255, 255, 255);
+          
+           }
+          
+           .btn-grad5:hover {
+             background-position: right center; /* change the direction of the change here */
+             color: rgb(255, 255, 255);
+             font-size: 20px;
+             font-family: Arial, Helvetica, sans-serif;
+          
+           } 
+                  </style>
+    </head>
+    <body id="body">
+      <div>
+        <fieldset id="field9">
+            <img src="image/LIC Logo Vector.png" id="logo">
+            <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              <span id="slogan">Your welfare is our responsibility</span>  &emsp;&emsp;&emsp;&emsp;&emsp;
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp; <button class="btn-grad5" target="_parent" onclick="back()">Back</button>
+              <a href="PhoneHelpLine.html" id="ancourtag" target="_blank"><button class="btn-grad5">Support</button></a></h1>
+        </fieldset>
+        <script>
+         function back() {
+                window.history.back();
+              }
+              function gohome() {
+                window.history.go(-1);
+              }         
+          </script>
+        </div>
+      
+        <fieldset id="payment_outer">
+          <div style="display: flex;">
+          <fieldset id="plan_summary-page">
+            <h1>LIC-life insurance Corporation</h1>
+            <h3>Final Premium Breakdown</h3>
+            <hr>
+            <form  name="pnameForm" method="post" action="paymentpage.php"  onsubmit="return payment()">
+            <span id="amount-t">Amount&nbsp;&nbsp;: <span id="plan_price" name="planprice"></span><br>
+            <span id="amount-t">GST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span id="Gst_price"></span><br>
+            <fieldset id="field1">
+              <span id="CM-title1">Total&emsp14;&nbsp;&nbsp;:  </span><span id="year_payment1" name="yearpayment1"></span>
+           </fieldset>          
+        </fieldset>
+     
+       
+          <fieldset id="payment">
+         
+              <br><br>
+                   <h1>Payment</h1>
+                   <table >
+                     <tr>
+                        <tb><label id="payment_shead">Name on Card</label></tb><br>
+                        <input type="text" id="payment_shead1" placeholder="Name" name="Name"><br><br>
+                     </tr>
+                     
+                     <tr>
+                     
+                       <tb><label id="payment_shead">Card number</label></tb><br>
+                       <input type="text" id="payment_shead1" placeholder="Card Number" name="card" maxlength="12"><br><br>
+                    </tr>
+                    <tr>
+                     <label id="payment_shead">Exp Month&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;Exp Year&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;CVV</label><br>
+                        <input type="text" id="payment_shead2" placeholder="Month" name="Month" maxlength="2">
+                        <input type="text" id="payment_shead3" placeholder="2021"  name="Year" maxlength="4">
+                        <input type="text" id="payment_shead4" placeholder="235" name="cvv" maxlength="3">
+                  </tr>
+                 </table>
+                 <br><br>
+                 <input type="submit" id="pay"  class="button-24" value="Pay Now" ><br><br>
+
+                 <input type="hidden" id="coverage_amount"  name="coverage_amount">
+                 <input type="hidden" id="coverage_till"  name="coverage_till">
+                 <input type="hidden" id="yearly_instalment_amount"  name="yearly_instalment_amount">
+                 <input type="hidden" id="instalment_amount"  name="instalment_amount">
+                 <input type="hidden" id="date_year"  name="date_year">
+                 <input type="hidden" id="time"  name="time">
+                 <input type="hidden" id="next_payment"  name="next_payment">
+                </form> 
+          </fieldset></div>
+        </fieldset>
+     
+        <script src="payment_page.js"></script>
+       
+    </body>
+   
+</html>

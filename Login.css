@@ -1,0 +1,119 @@
+#body{
+    background: url('image/Insurance_Health_2019_9-04.jpg');
+    background-repeat: no-repeat;
+   
+    background-attachment: fixed;  
+    background-size:cover;
+}
+#title{
+   height: 100px;
+   background-color: rgba(27, 27, 26, 0);
+   border: none;
+   border-radius: 5px;
+}
+#title h1{
+   font-size: 50px;
+   text-align: center;
+   font-family: helvetica;
+   color: rgb(0, 0, 0);
+}
+#outer{
+    display: flex;
+}
+#Login-outer{
+   width: 700px;
+   margin-top: 120px;
+   margin-left: 200px;
+   height: 400px;
+   border: none;
+}
+#resigtration-outer{
+    width: 700px;
+    margin-top: 120px;
+    height: 400px;
+    border: none;
+}
+#center{
+    margin-top: 100px;
+  border-left: 6px solid black;
+  height: 350px;
+}
+#Login-outer h1{
+    margin-left: 38%;
+    font-family: Helvetica;
+    color: rgb(0, 0, 0);
+    font-size: 33px;
+}
+#Login-outer h3{
+    margin-left: 38%;
+}
+#Login-outer a{
+    color: black;
+    font-size: medium;
+    margin-left: 10px;
+}
+#Login-outer a:hover{
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+#inputs{
+    height: 40px;
+    width: 350px;
+    margin-left: 38%;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+}
+#submit{
+    margin-left: 520px;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    background-color: rgb(43, 255, 0);
+}
+#submit:hover{
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px;
+    font-size: 22px;
+    background-color: rgb(43, 255, 0);
+}
+#resigtration-outer h1{
+    margin-left: 10%;
+    font-family: Helvetica;
+    color: rgb(0, 0, 0);
+    font-size: 33px;
+}
+#new-register{
+    margin-left: 15%;
+    width: 350px;
+    height: 40px;
+    font-size: 25px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    background-color: rgba(255, 30, 0, 0.692);
+}
+#new-register:hover{
+
+    width: 370px;
+    height: 50px;
+    font-size: 28px;
+    background-color: rgb(255, 30, 0);
+}
+#footer{
+    margin-top:120px;
+    height: 200px;
+    background-color: rgba(85, 0, 0, 0);
+    border: none;
+}
+
+#Show{
+    margin-left: 280px;
+}
+#forgetps{
+    margin-left: 100px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>     
+        <style>
+           #body{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(105,105,236,1) 0.1%, rgba(31,31,112,1) 100.2% );
+}
+#field1{
+    background-color: #ffffffc0;
+    height: 170px;
+    border-radius: 10px;
+    border:none;
+}
+#logo{
+    float: left;
+    margin-top: 5px;
+    width: 350px;
+    height: 135px;
+    align-items:center;
+    display: flex;   
+}
+#slogan{
+    position: relative;
+    top: 20px;
+    margin-right: 80px;
+    color:rgb(0, 0, 0);
+    font-family: Mistral;
+    font-size: 55px;
+    text-shadow:2px 2px 4px rgb(255, 255, 255);
+}
+
+
+.btn-grad {background-color: rgb(255, 72, 0);}
+.btn-grad {
+  margin-left: 5px;
+   padding: 13px 30px;
+   font-size: 15px;
+   text-align: center;
+   text-transform: uppercase;
+   background-size: 200% auto;
+   color: rgb(255, 255, 255);     
+   font-size: 17px;
+   font-family: Arial, Helvetica, sans-serif;
+   border-radius: 12px;
+  border: 1px rgb(255, 255, 255);
+
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+
+ } 
+ .btn-grad1 {background-color: rgb(255, 72, 0);}
+.btn-grad1 {
+  margin-left: 5px;
+   padding: 13px 30px;
+   font-size: 15px;
+   text-align: center;
+   text-transform: uppercase;
+   background-size: 200% auto;
+   color: rgb(253, 253, 253);     
+   font-size: 17px;
+   font-family: Arial, Helvetica, sans-serif;
+   border-radius: 12px;
+  border: 1px rgb(255, 255, 255);
+
+ }
+
+ .btn-grad1:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+
+ } 
+        </style>
+    </head>
+    <body>
+        <div>
+            <fieldset id="field1">
+                <img src="image/LIC Logo Vector.png" id="logo">
+                <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                  <span id="slogan">Your welfare is our responsibility</span></h1><hr>
+                  &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                  &emsp;&emsp;&emsp;&emsp;&emsp;
+                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                 <button class="btn-grad1" target="_parent" onclick="back()">Back</button>
+                 <a href="Buypolicy.html" id="ancourtag" target="_blank"><button class="btn-grad">Buy policy</button></a>
+                 <a href="view_policy.php" id="ancourtag" target="_blank"><button class="btn-grad">View policy</button></a>
+                 <a href="PhoneHelpLine.html" id="ancourtag" target="_blank"><button class="btn-grad">Support</button></a>
+            </fieldset>
+            </div>
+            <script>
+              function back() {
+                window.history.back();
+              }
+              function gohome() {
+                window.history.go(-1);
+              }
+              
+              </script>
+            </body>
+</html>

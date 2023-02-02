@@ -1,0 +1,189 @@
+<html>
+   <head>
+       <title>
+        Registration-Page-LIC.com
+       </title>
+       <link rel="stylesheet" href="Registration.css">
+
+   </head>
+   <body  id="body">
+ <!--header -->     
+         <div>
+            <fieldset id="title">
+                <h1>LIC-Life insurance Corporation</h1>
+                <h3>Registration Page</h3>
+            </fieldset>
+        </div>
+<!---->
+<form name="newregistration" method="post" action="lic_customer_registration.php" >
+<!--field 1 personal Details-->
+<!---->
+<div id="l-background1"><h3 id="l-title">Personal Details</h3></div><br>
+
+<fieldset id="personal_details">
+     <!--First name and last name --> 
+     <br>
+      <input type="text" id="input_fields" class="fname"  name="fname" placeholder="First Name">   
+      <input type="text" id="input_fields" class="lname"  name="lname" placeholder="Last Name"> 
+     <br> <br>
+     <!--gender-->
+     <label class="container">Male
+        <input type="radio"  name="gender" value="male">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Female
+        <input type="radio"  name="gender" value="Female">
+        <span class="checkmark"></span>
+      </label>
+    
+      <!--Phone number-->
+     <input type="text" id="input_fields1" class="phone_number"  name="phone_number" placeholder="Phone number"> 
+      <br><br>
+     <!--Address-->
+      <input type="text" id="input_fields" class="Address"  name="Address" placeholder="Address">  
+     <!--City-->
+     <input type="text" id="input_fields" class="City"  name="City" placeholder="City">  
+     <!--State-->
+     <select name="state" id="input_fields" class="form-control">
+      <option value="Selected"hidden>Choose your State</option>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+      <option value="Assam">Assam</option>
+      <option value="Bihar">Bihar</option>
+      <option value="Chandigarh">Chandigarh</option>
+      <option value="Chhattisgarh">Chhattisgarh</option>
+      <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+      <option value="Daman and Diu">Daman and Diu</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Lakshadweep">Lakshadweep</option>
+      <option value="Puducherry">Puducherry</option>
+      <option value="Goa">Goa</option>
+      <option value="Gujarat">Gujarat</option>
+      <option value="Haryana">Haryana</option>
+      <option value="Himachal Pradesh">Himachal Pradesh</option>
+      <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+      <option value="Jharkhand">Jharkhand</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Kerala">Kerala</option>
+      <option value="Madhya Pradesh">Madhya Pradesh</option>
+      <option value="Maharashtra">Maharashtra</option>
+      <option value="Manipur">Manipur</option>
+      <option value="Meghalaya">Meghalaya</option>
+      <option value="Mizoram">Mizoram</option>
+      <option value="Nagaland">Nagaland</option>
+      <option value="Odisha">Odisha</option>
+      <option value="Punjab">Punjab</option>
+      <option value="Rajasthan">Rajasthan</option>
+      <option value="Sikkim">Sikkim</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Telangana">Telangana</option>
+      <option value="Tripura">Tripura</option>
+      <option value="Uttar Pradesh">Uttar Pradesh</option>
+      <option value="Uttarakhand">Uttarakhand</option>
+      <option value="West Bengal">West Bengal</option>
+      </select>
+     <!--pincode-->
+     <input type="text" id="input_fields" class="pincode"  name="pincode" placeholder="Pincode"> 
+     
+</fieldset><br>
+<!---->
+<!--field 2 education and occupation-->
+<!---->
+<div id="l-background2"><h3 id="l-title">Education and Occupation</h3></div><br>
+
+<fieldset id="educationandoccupation">
+   
+    <h3>Education and Qualification</h3>
+    &ensp;&ensp; <label class="container">Post Graduate
+       <input type="radio"  name="Education_and_Qualification" value="Post Graduate">
+       <span class="checkmark"></span>
+     </label>
+     <label class="container">Graduate
+       <input type="radio"  name="Education_and_Qualification" value="Graduate" >
+       <span class="checkmark"></span>
+     </label> &nbsp;
+     <label class="container">Diploma
+        <input type="radio"  name="Education_and_Qualification" value="Diploma">
+        <span class="checkmark"></span>
+      </label><br><br>
+      &ensp;&ensp; <label class="container">12th Pass
+        <input type="radio"  name="Education_and_Qualification" value="12th Pass">
+        <span class="checkmark"></span>
+      </label>&ensp;&ensp;&ensp;&ensp;&nbsp;
+      <label class="container">10th Pass
+        <input type="radio"  name="Education_and_Qualification" value="10th Pass">
+        <span class="checkmark"></span>
+      </label>&nbsp;
+      <label class="container">Below 10th Std
+        <input type="radio"  name="Education_and_Qualification" value="Below 10th Std">
+        <span class="checkmark"></span>
+      </label>   
+
+<br><br>
+<!--field 3 Occupation-->
+      <h3>Occupation</h3>
+      &ensp;&ensp;<label class="container">Salaried
+         <input type="radio"  name="Occupationtype" value="Salaried">
+         <span class="checkmark"></span>
+       </label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;
+       <label class="container">Self Employed - Professional
+         <input type="radio"  name="Occupationtype"  value="Self Employed - Professional">
+         <span class="checkmark"></span>
+       </label> <br><br>
+       &ensp;&ensp;<label class="container">Self Employed -Business
+          <input type="radio"  name="Occupationtype" value="Self Employed -Business">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Not Employed
+          <input type="radio"  name="Occupationtype" value="Not Employed">
+          <span class="checkmark"></span>
+
+          <h3>Annual income</h3>
+        &ensp;&nbsp;<label class="container">1.5 LPA - 2.5 LPA
+         <input type="radio"  name="Annual_income" value="1.5 LPA - 2.5 LPA">
+         <span class="checkmark"></span>
+       </label>
+       <label class="container">2.5 LPA - 5.0 LPA
+         <input type="radio" name="Annual_income" value="2.5 LPA - 5.0 LPA">
+         <span class="checkmark"></span>
+       </label> 
+       <label class="container">5.0 LPA - 7.5 LPA
+          <input type="radio"  name="Annual_income" value="5.0 LPA - 7.5 LPA">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">7.5 LPA - Above
+          <input type="radio" name="Annual_income" value="7.5 LPA - Above">
+          <span class="checkmark"></span>
+</fieldset>
+
+<br>
+<div id="l-background"><h3 id="l-title">Login Details</h3></div><br>
+
+    <!--First name and last name --> 
+<fieldset id="LoginDetails">
+    <!--First name and last name --> 
+    <br><br>
+     <input type="text" id="input_fields2" class="Email"  name="Email" placeholder="Email ID">   
+     <input type="text" id="input_fields11" class="Remail"  name="Remail" placeholder="Repeat Email ID">  <br> <br>
+    <!--Address-->
+     <input type="password" id="input_fields2" class="ps"  name="password" placeholder="Password">  
+    <!--City-->
+    <input type="password" id="input_fields11" class="Rps"  name="Rpassword" placeholder="Confirm Password"> <br> <br>
+    <!-- An element to toggle between password visibility -->
+    <input type="checkbox" id="Show" onclick="myFunction()"><span id="show1">Show Password</span>
+    <button id="Cancel" onclick="back">Cancel</button>
+    <button id="Submit" onclick="return formvalidation()">Submit</button>
+    
+</fieldset><br>
+
+
+</form>
+ <!--footer-->
+ <div>
+    <fieldset id="footer">
+       
+    </fieldset>
+    <script src="Registration_pagevalidation.js"></script>
+   </body>
+</html>

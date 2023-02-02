@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          plan_summary-page-LIC.com
+        </title>
+        <link rel="stylesheet" href="plan_summary.css">
+        <style>
+            #field9{
+                background-color: #222121c0;
+                height: 150px;
+                border-radius: 10px;
+                border:none;
+            }
+            #logo{
+                float: left;
+                margin-top: 5px;
+                width: 350px;
+                height: 125px;
+                align-items:center;
+                display: flex;   
+            }
+            #slogan{
+                position: relative;
+                top: 20px;
+                margin-right: 80px;
+                color:rgb(255, 255, 255);
+                font-family: Mistral;
+                font-size: 55px;
+                text-shadow:2px 2px 4px rgb(0, 0, 0);
+            }
+            
+             .btn-grad5 {background-color: rgb(255, 72, 0);}
+            .btn-grad5{
+              margin-left: 5px;
+               padding: 13px 30px;
+               font-size: 15px;
+               text-align: center;
+               text-transform: uppercase;
+               background-size: 200% auto;
+               color: rgb(253, 253, 253);     
+               font-size: 17px;
+               font-family: Arial, Helvetica, sans-serif;
+               border-radius: 12px;
+              border: 1px rgb(255, 255, 255);
+            
+             }
+            
+             .btn-grad5:hover {
+               background-position: right center; /* change the direction of the change here */
+               color: rgb(255, 255, 255);
+               font-size: 20px;
+               font-family: Arial, Helvetica, sans-serif;
+            
+             } 
+                    </style>
+    </head>
+   
+    <body id="body">
+        <div>
+            <fieldset id="field9">
+                <img src="image/LIC Logo Vector.png" id="logo">
+                <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                  <span id="slogan">Your welfare is our responsibility</span>  &emsp;&emsp;&emsp;&emsp;&emsp;
+                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp; <button class="btn-grad5" target="_parent" onclick="back()">Back</button>
+                  <a href="PhoneHelpLine.html" id="ancourtag" target="_blank"><button class="btn-grad5">Support</button></a></h1>
+            </fieldset>
+            <script>
+              function back() {
+                window.history.back();
+              }
+              function gohome() {
+                window.history.go(-1);
+              }
+              
+              </script>
+            </div>
+    <form name="plan_summary"  method = "post" action="plansummary.php" onsubmit=" return planform_validation()">
+        <div>
+            <fieldset id="plan_summary">
+        <!-- plan summary box-->
+                     <div style="display: flex;">
+                     <fieldset id="plan_summary-page">
+                         <h1>LIC-life insurance Corporation</h1>
+                         <h3>Plan summary</h3>
+                         <hr><br><br><br>
+                         <span id="CM-title">Cover  &nbsp;&nbsp;&nbsp;&nbsp;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;:</span><span id="coveramountdisplay"></span><br><br>
+                         <span id="CM-title">Coverage Till&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;:</span><span id="valid_upto" ></span><br><br>
+                         
+                         <fieldset id="field1">
+                            <span id="CM-title1">Yearly Instalment&emsp14;&emsp14;&nbsp;&nbsp;:</span><span id="year_payment1"></span>
+                         </fieldset>
+                        <br><hr>
+                     </fieldset>
+        <!--Additional details box-->
+                     <fieldset id="Additional_details">
+                         <div id="field">
+                    <!--Row 1 -->
+                                 <label for="" id="lable">Your Name</label>&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                                 <label for="" id="lable1">Enter PAN number</label><br><br>
+                                 <input type="text" id="inputs" name="username" placeholder="">&emsp14;
+                                 <input type="text" id="inputs" name="pan_number" placeholder=" AAAAA9999A"><br><br>
+                               
+                    <!--Row 2 -->
+                                 <label for="" id="lable">Enter Aadhaar number</label>
+                                 <label for="" id="lable2">Policy Buyer's email</label><br><br>
+                                 <input type="text" id="inputs" name="aadharnum" placeholder="xxxx-xxxx-xxxx">&emsp14;
+                                 <input type="email" id="inputs" name="Buyer_email_ID" placeholder="@gmail.com"><br><br>
+                    <!--Row 3 -->
+                                 <label for="" id="lable">Organisation Type</label>&emsp14;&emsp14;
+                                 <label for="" id="lable1">Yearly income (per-tax)</label> <br><br>
+                                 <select  id="inputs" name="Organisation">
+                                      <option hidden value="Selected">Choose the Type</option>
+                                      <option value="Government" name="Government">Government</option>
+                                      <option value="Others" name="Others">Others</option>
+                                      <option value="Private" name="Private">Private</option>
+                                      <option value="Public" name="Public">Public</option>
+
+                                      <input type="text" id="inputs1" name="yearly_income" placeholder="">
+                                 </select>
+                         </div>
+             <!--Declarations -->
+                         <div id="field_D">
+                               <h4 id="D_title">Declarations</h4>
+                               <label class="container">I confirm I am indian citizen and tax resident,currently residing in india
+                                <input type="checkbox" name="checkbox1">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">I have read and understood the features,benefit illustration,declarations
+                                <input type="checkbox" name="checkbox2">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">I agree to the terms and conditions
+                                <input type="checkbox" name="checkbox3">
+                                <span class="checkmark"></span>
+                              </label>
+                         </div>
+            <!--Submit-->
+                         <input type="submit" value="PROCEED" class="btn-grad" >
+                        </fieldset>
+                    </div>
+            </fieldset>
+        </div>       </form>
+        <script src="plan_summary.js"></script>
+    </body>
+  
+</html>

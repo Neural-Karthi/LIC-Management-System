@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body id="body">
+        <div>
+            <fieldset id="field1">
+                <img src="image/LIC Logo Vector.png" id="logo">
+                <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                  <span id="slogan">Your welfare is our responsibility</span></h1><hr>
+                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                  <a href="Buypolicy.html" id="ancourtag"><button class="btn-grad">Buy policy</button></a>
+                  <a href="view_policy.php" id="ancourtag"><button class="btn-grad">View policy</button></a>
+                  <a href="youracccount.php" id="ancourtag"><button class="btn-grad">Your Account</button></a>
+                  <a href="PhoneHelpLine.html" id="ancourtag"><button class="btn-grad">Support</button></a>
+            </fieldset>
+            <br><hr><br><br>
+            <fieldset id="ad1">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 5</div>
+                      <img src="image/LIC_Jeevan-Saakshya_980-x-292-pix.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 5</div>
+                      <img src="image/LIC_online-policies_980-x-292_Eng-(1).jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 5</div>
+                      <img src="image/Pan-card-980x292-pix-01.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="image/Banner-1.jpg" style="width:100%">
+                      </div>
+                      <div class="mySlides fade">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="image/banner-11.jpg" style="width:100%">
+                      </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    </div>
+                    <br>
+                    
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                        <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+            </fieldset>
+            <hr>
+            <fieldset id="review1">
+                <h1 style="text-align: center;font-family: helvetic;color: white;">Our customer review</h1>
+<div class="row">
+  <div class="column">
+    <div class="card">
+       <img src="image/man (2).png" id="c_img">
+      <p>
+      <h2>Pavan kumar</h2>
+      <h3>Rating</h3>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<h4>I had recently bought a Lic India child insurance plan online and it has been a best plan for my child’s safety and security.</h4>
+      </p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <img src="image/man (2).png" id="c_img">
+      
+        <p>
+            <h2>Ajith kumar</h2>
+            <h3>Rating</h3>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star "></span>
+      <span class="fa fa-star"></span>
+      <h4>I am one of the happiest customer of Lic India term plan and I have found various good deals. It is the plan which has come under my budget. And it has been a protective shield for me and my family.</h4>
+            </p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <img src="image/woman.png" id="c_img">
+       
+        <p>
+            <h2>Mounika</h2>
+            <h3>Rating</h3>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <h4>I have bought a Lic India child plan online and it has been a year now. I like the way the this works. It is a nice plan I got for my child’s security.</h4>
+            </p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <img src="image/woman.png" id="c_img">
+      
+        <p>
+            <h2>Thanishika</h2>
+            <h3>Rating</h3>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star "></span>
+      <span class="fa fa-star"></span>
+            <h4>In my Lic India pension plan I got to know about various features which has enhanced my future. I am future secured along with my job.</h4></p>
+    </div>
+  </div>
+</div>
+            </fieldset>
+        </div><br><hr><br>
+        <div id="footer">
+            <fieldset id="footer">  <bR><br><br>
+                <div id="footer_page">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <a href="home.html" target="_parent" id="flink">Home</a><span style="color: white;"> &emsp;|&emsp; </span>
+                    <a href="Buypolicy.html" target="_parent" id="flink">Buy policy</a><span style="color: white;"> &emsp;|&emsp; </span>
+                    <a href="view_policy.php" target="_parent"target="_parent" id="flink">View policy</a><span style="color: white;"> &emsp;|&emsp; </span>
+                    <a href="PhoneHelpLine.html" target="_parent" id="flink">Phone Helpline</a><span style="color: white;"> &emsp;|&emsp; </span>
+                    <a href="Policy Guidelines & Helpline.html" target="_parent" id="flink">Policy Guidline & Helpline</a><span style="color: white;"> &emsp;|&emsp; </span>
+                    <a href="NRI Centre.html" target="_parent" id="flink">NRI center</a><span style="color: white;"> &emsp;|&emsp;</span>
+                    <a href="PolicyStatus.html" target="_parent" id="flink">Policy Status</a><span style="color: white;"> &emsp;|&emsp; </span>
+                    <a href="Claims Settlement.html" target="_parent" id="flink">Claim settlement</a><span style="color: white;"> &emsp;|&emsp;</span>
+                    <a href="FAQs.html" target="_parent" id="flink">FAQs</a>
+                </div><br><br>
+               <h5> Copyright © 2021 - All Rights Reserved - Official website of Life Insurance Corporation of India.</h5>
+               <h5>Content on this website is published and managed by Life Insurance Corporation of India.</h5>
+               <h5>Corporate Office : Yogakshema Building, Jeevan Bima Marg, P.O. Box No – 19953, Mumbai – 400 021 IRDAI Reg No- 512</h5>
+               <h5> Life Insurance Corporation of India, Administrative Officer, Corporate Communication Dept.</h5>
+            </fieldset>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           Login-page-LIC.com
+        </title>
+        <link rel="stylesheet" href="Login.css">
+
+    </head>
+    <body id="body">
+   <!--header -->     
+         <div>
+            <fieldset id="title">
+                <h1>LIC-Life insurance Corporation</h1>
+            </fieldset>
+        </div>
+        <div id="outer">
+ <!--login -->
+          <fieldset id="Login-outer">
+              <form name="loginform" method="post" action="lic_customer_login.php">
+              <h1>LOGIN</h1>
+            <input type="text" id="inputs" name="EmailID" class="EmailID" placeholder="  Email ID"><br><br>
+            <input type="password" id="inputs" name="password" class="password" placeholder="  password"><br><br>
+           
+            <input type="checkbox" id="Show" onclick=" return myFunction()"><span id="show1">Show Password</span<br><br>
+
+            <button id="submit" onclick="return loginvalidation() ">Login</button>
+        </form>
+         </fieldset>
+ <!--Center line -->
+          <div id="center">
+          </div>
+ <!--New Registration-->
+          <fieldset id="resigtration-outer">
+            <h1>REGISTER</h1><br><br>
+            <button id="new-register" onclick="opensignupform()">New Registration</button>
+          </fieldset>
+          </div>
+ <!--footer-->
+ <div>
+    <fieldset id="footer">
+       
+    </fieldset>
+</div>
+<script src="Login.js"></script>
+    </body>
+</html>
